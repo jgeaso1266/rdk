@@ -16,7 +16,7 @@ require (
 	github.com/charmbracelet/huh v0.6.0
 	github.com/charmbracelet/huh/spinner v0.0.0-20240917123815-c9b2c9cdb7b6
 	github.com/chenzhekl/goply v0.0.0-20190930133256-258c2381defd
-	github.com/creack/pty v1.1.19-0.20220421211855-0d412c9fbeb1
+	github.com/creack/pty v1.1.20
 	github.com/disintegration/imaging v1.6.2
 	github.com/docker/go-units v0.5.0
 	github.com/edaniels/gobag v1.0.7-0.20220607183102-4242cd9e2848
@@ -91,12 +91,12 @@ require (
 	goji.io v2.0.2+incompatible
 	golang.org/x/image v0.25.0
 	golang.org/x/mobile v0.0.0-20240112133503-c713f31d574b
-	golang.org/x/sync v0.17.0
-	golang.org/x/sys v0.37.0
-	golang.org/x/term v0.34.0
-	golang.org/x/text v0.28.0
+	golang.org/x/sync v0.18.0
+	golang.org/x/sys v0.38.0
+	golang.org/x/term v0.37.0
+	golang.org/x/text v0.31.0
 	golang.org/x/time v0.6.0
-	golang.org/x/tools v0.35.0
+	golang.org/x/tools v0.39.0
 	gonum.org/v1/gonum v0.16.0
 	gonum.org/v1/plot v0.15.2
 	google.golang.org/genproto/googleapis/api v0.0.0-20250707201910-8d1bb00bc6a7
@@ -194,11 +194,12 @@ require (
 	github.com/chewxy/hm v1.0.0 // indirect
 	github.com/chewxy/math32 v1.0.8 // indirect
 	github.com/ckaznocha/intrange v0.2.0 // indirect
-	github.com/clipperhouse/uax29/v2 v2.2.0 // indirect
+	github.com/clipperhouse/stringish v0.1.1 // indirect
+	github.com/clipperhouse/uax29/v2 v2.3.0 // indirect
 	github.com/cncf/xds/go v0.0.0-20250501225837-2ac532fd4443 // indirect
 	github.com/containerd/console v1.0.5 // indirect
 	github.com/containerd/stargz-snapshotter/estargz v0.15.1 // indirect
-	github.com/cpuguy83/go-md2man/v2 v2.0.4 // indirect
+	github.com/cpuguy83/go-md2man/v2 v2.0.7 // indirect
 	github.com/curioswitch/go-reassign v0.2.0 // indirect
 	github.com/daixiang0/gci v0.13.5 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
@@ -235,6 +236,7 @@ require (
 	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
+	github.com/go-quicktest/qt v1.101.1-0.20240301121107-c6c8733fa1e6 // indirect
 	github.com/go-toolsmith/astcast v1.1.0 // indirect
 	github.com/go-toolsmith/astcopy v1.1.0 // indirect
 	github.com/go-toolsmith/astequal v1.2.0 // indirect
@@ -387,9 +389,9 @@ require (
 	github.com/sonatard/noctx v0.0.2 // indirect
 	github.com/sourcegraph/go-diff v0.7.0 // indirect
 	github.com/spf13/afero v1.11.0 // indirect
-	github.com/spf13/cobra v1.8.1 // indirect
+	github.com/spf13/cobra v1.10.1 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
-	github.com/spf13/pflag v1.0.5 // indirect
+	github.com/spf13/pflag v1.0.10 // indirect
 	github.com/spf13/viper v1.12.0 // indirect
 	github.com/spiffe/go-spiffe/v2 v2.5.0 // indirect
 	github.com/srikrsna/protoc-gen-gotag v0.6.2 // indirect
@@ -446,13 +448,12 @@ require (
 	go.uber.org/goleak v1.3.0 // indirect
 	go.yaml.in/yaml/v4 v4.0.0-rc.2 // indirect
 	go4.org/unsafe/assume-no-moving-gc v0.0.0-20230525183740-e7c30c78aeb2 // indirect
-	golang.org/x/crypto v0.41.0 // indirect
+	golang.org/x/arch v0.23.0 // indirect
+	golang.org/x/crypto v0.44.0 // indirect
 	golang.org/x/exp/typeparams v0.0.0-20240314144324-c7f7c6466f7f // indirect
-	golang.org/x/mod v0.26.0 // indirect
-	golang.org/x/net v0.43.0 // indirect
+	golang.org/x/mod v0.30.0 // indirect
+	golang.org/x/net v0.47.0 // indirect
 	golang.org/x/oauth2 v0.30.0 // indirect
-	golang.org/x/tools/go/expect v0.1.1-deprecated // indirect
-	golang.org/x/tools/go/packages/packagestest v0.1.1-deprecated // indirect
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
 	google.golang.org/api v0.196.0 // indirect
 	google.golang.org/genproto v0.0.0-20240903143218-8af14fe29dc1 // indirect
@@ -474,5 +475,8 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/yosuke-furukawa/json5 v0.1.1
 	github.com/ziutek/mymysql v1.5.4 // indirect
-	golang.org/x/exp v0.0.0-20241009180824-f66d83c29e7c
+	golang.org/x/exp v0.0.0-20251113190631-e25ba8c21ef6
 )
+
+// FOR TESTING: to remove once https://github.com/viamrobotics/api/pull/778 is merged
+replace go.viam.com/api => github.com/jgeaso1266/api v0.0.1

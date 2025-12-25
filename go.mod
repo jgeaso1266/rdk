@@ -348,4 +348,4 @@ require (
 	golang.org/x/exp v0.0.0-20251113190631-e25ba8c21ef6
 )
 
-replace go.viam.com/api => /Users/jalen.geason/viam/api
+replace go.viam.com/api => ../../api

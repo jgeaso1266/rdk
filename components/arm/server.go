@@ -248,6 +248,7 @@ func (s *serviceServer) StreamJointPositions(
 	ticker := time.NewTicker(time.Second / time.Duration(fps))
 	defer ticker.Stop()
 
+	sequence := int32(0)
 	for {
 		select {
 		case <-stream.Context().Done():
@@ -266,11 +267,13 @@ func (s *serviceServer) StreamJointPositions(
 				return err
 			}
 
-			// Send response with timestamp
+			// Send response with timestamp and sequence number
 			resp := &pb.StreamJointPositionsResponse{
 				Positions: jp,
 				Timestamp: timestamppb.Now(),
+				Sequence:  sequence,
 			}
+			sequence++
 
 			if err := stream.Send(resp); err != nil {
 				return err

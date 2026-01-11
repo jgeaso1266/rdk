@@ -8,6 +8,7 @@ import (
 	_ "go.viam.com/rdk/services/datamanager"
 	_ "go.viam.com/rdk/services/discovery"
 	_ "go.viam.com/rdk/services/generic"
+	_ "go.viam.com/rdk/services/lerobot"
 	_ "go.viam.com/rdk/services/mlmodel"
 	_ "go.viam.com/rdk/services/navigation"
 	_ "go.viam.com/rdk/services/shell"

@@ -7,6 +7,7 @@ import (
 	_ "go.viam.com/rdk/services/datamanager/register"
 	_ "go.viam.com/rdk/services/discovery/register"
 	_ "go.viam.com/rdk/services/generic/register"
+	_ "go.viam.com/rdk/services/lerobot/register"
 	_ "go.viam.com/rdk/services/shell/register"
 	_ "go.viam.com/rdk/services/slam/register"
 	_ "go.viam.com/rdk/services/video/register"
